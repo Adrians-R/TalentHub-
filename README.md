@@ -130,10 +130,3 @@ talenthub/
 ```
 
 ---
-
-## ⚖️ Kepemilikan & Hak Cipta
-
-**Hak Cipta © 2026 Adriansyah Ramadhan ([@Adrians-R](https://github.com/Adrians-R)). Seluruh Hak Cipta Dilindungi Undang-Undang.**
-
-* Desain antarmuka, arsitektur alur kerja *reversed recruitment*, dan kode sumber platform ini merupakan hak cipta proprietary dari pemilik proyek.
-* Penggunaan, distribusi, modifikasi, atau penyebarluasan komersial tanpa izin tertulis dari pemilik proyek dilarang keras.
