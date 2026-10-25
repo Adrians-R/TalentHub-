@@ -81,12 +81,27 @@ function ensureDatabase() {
   }
 }
 
-// Default system accounts (1 Super Admin + 5 Real User Profiles)
+// Default system accounts (1 Super Admin + 6 Indonesian Candidates + 3 Indonesian Recruiters = 10 Users)
 export const DEFAULT_USERS: UserDbRecord[] = [
   // 1. Super Admin Account
   {
     id: "admin_1",
-    fullName: "Sarah Connor (Super Admin)",
+    fullName: "Super Admin TalentHub",
+    email: "admin@talenthub.id",
+    passwordHash: hashPassword("Admin1234!", "default_salt"),
+    salt: "default_salt",
+    role: "admin",
+    emailVerified: true,
+    verificationCode: null,
+    verificationExpires: null,
+    resetPasswordToken: null,
+    resetPasswordExpires: null,
+    trustedDevices: ["dev_trusted_admin"],
+    createdAt: "2026-08-20T00:00:00.000Z"
+  },
+  {
+    id: "admin_alt",
+    fullName: "Super Admin TalentHub",
     email: "admin@example.com",
     passwordHash: hashPassword("Admin1234!", "default_salt"),
     salt: "default_salt",
@@ -99,27 +114,11 @@ export const DEFAULT_USERS: UserDbRecord[] = [
     trustedDevices: ["dev_trusted_admin"],
     createdAt: "2026-08-20T00:00:00.000Z"
   },
-  // Compatibility alias for existing admin tests
-  {
-    id: "admin_talenthub",
-    fullName: "Sarah Connor",
-    email: "admin@talenthub.com",
-    passwordHash: hashPassword("admin1234", "default_salt"),
-    salt: "default_salt",
-    role: "admin",
-    emailVerified: true,
-    verificationCode: null,
-    verificationExpires: null,
-    resetPasswordToken: null,
-    resetPasswordExpires: null,
-    trustedDevices: ["dev_trusted_admin"],
-    createdAt: "2026-08-20T00:00:00.000Z"
-  },
-  // 2. Real User Profile 1 (Candidate): Alex Rivera
+  // 2. Candidate 1: Rizky Pratama (Senior Full-Stack Engineer)
   {
     id: "cand_1",
-    fullName: "Alex Rivera",
-    email: "alex.rivera@example.com",
+    fullName: "Rizky Pratama",
+    email: "rizky.pratama@example.com",
     passwordHash: hashPassword("Password123!", "default_salt"),
     salt: "default_salt",
     role: "candidate",
@@ -131,26 +130,11 @@ export const DEFAULT_USERS: UserDbRecord[] = [
     trustedDevices: ["dev_trusted_cand_1"],
     createdAt: "2026-08-20T00:00:00.000Z"
   },
-  {
-    id: "cand_alex_alt",
-    fullName: "Alex Rivera",
-    email: "alex@rivera.com",
-    passwordHash: hashPassword("password123", "default_salt"),
-    salt: "default_salt",
-    role: "candidate",
-    emailVerified: true,
-    verificationCode: null,
-    verificationExpires: null,
-    resetPasswordToken: null,
-    resetPasswordExpires: null,
-    trustedDevices: ["dev_trusted_cand_1"],
-    createdAt: "2026-08-20T00:00:00.000Z"
-  },
-  // 3. Real User Profile 2 (Candidate): Maya Lin
+  // 3. Candidate 2: Annisa Larasati (Lead UI/UX & Product Designer)
   {
     id: "cand_2",
-    fullName: "Maya Lin",
-    email: "maya.lin@example.com",
+    fullName: "Annisa Larasati",
+    email: "annisa.larasati@example.com",
     passwordHash: hashPassword("Password123!", "default_salt"),
     salt: "default_salt",
     role: "candidate",
@@ -162,11 +146,11 @@ export const DEFAULT_USERS: UserDbRecord[] = [
     trustedDevices: ["dev_trusted_cand_2"],
     createdAt: "2026-08-20T00:00:00.000Z"
   },
-  // 4. Real User Profile 3 (Candidate): Budi Santoso
+  // 4. Candidate 3: Dimas Arya Nugraha (Cloud & DevOps Architect)
   {
     id: "cand_3",
-    fullName: "Budi Santoso",
-    email: "budi.santoso@example.com",
+    fullName: "Dimas Arya Nugraha",
+    email: "dimas.arya@example.com",
     passwordHash: hashPassword("Password123!", "default_salt"),
     salt: "default_salt",
     role: "candidate",
@@ -178,70 +162,67 @@ export const DEFAULT_USERS: UserDbRecord[] = [
     trustedDevices: ["dev_trusted_cand_3"],
     createdAt: "2026-08-20T00:00:00.000Z"
   },
-  // 5. Real User Profile 4 (Recruiter): Elena Rostova
+  // 5. Candidate 4: Maya Putri Wulandari (Junior Frontend Developer)
+  {
+    id: "cand_4",
+    fullName: "Maya Putri Wulandari",
+    email: "maya.putri@example.com",
+    passwordHash: hashPassword("Password123!", "default_salt"),
+    salt: "default_salt",
+    role: "candidate",
+    emailVerified: true,
+    verificationCode: null,
+    verificationExpires: null,
+    resetPasswordToken: null,
+    resetPasswordExpires: null,
+    trustedDevices: ["dev_trusted_cand_4"],
+    createdAt: "2026-08-20T00:00:00.000Z"
+  },
+  // 6. Candidate 5: Fajar Hidayat (Mobile Engineer / Flutter Specialist)
+  {
+    id: "cand_5",
+    fullName: "Fajar Hidayat",
+    email: "fajar.hidayat@example.com",
+    passwordHash: hashPassword("Password123!", "default_salt"),
+    salt: "default_salt",
+    role: "candidate",
+    emailVerified: true,
+    verificationCode: null,
+    verificationExpires: null,
+    resetPasswordToken: null,
+    resetPasswordExpires: null,
+    trustedDevices: ["dev_trusted_cand_5"],
+    createdAt: "2026-08-20T00:00:00.000Z"
+  },
+  // 7. Candidate 6: Bunga Pratiwi (Product Marketing & Growth Lead)
+  {
+    id: "cand_6",
+    fullName: "Bunga Pratiwi",
+    email: "bunga.pratiwi@example.com",
+    passwordHash: hashPassword("Password123!", "default_salt"),
+    salt: "default_salt",
+    role: "candidate",
+    emailVerified: true,
+    verificationCode: null,
+    verificationExpires: null,
+    resetPasswordToken: null,
+    resetPasswordExpires: null,
+    trustedDevices: ["dev_trusted_cand_6"],
+    createdAt: "2026-08-20T00:00:00.000Z"
+  },
+  // 8. Recruiter 1: Siti Nurhaliza (Head of Talent Acquisition)
   {
     id: "rec_1",
-    fullName: "Elena Rostova",
-    email: "elena.rostova@techcorp.com",
+    fullName: "Siti Nurhaliza",
+    email: "siti.nurhaliza@digitalnusantara.id",
     passwordHash: hashPassword("Password123!", "default_salt"),
     salt: "default_salt",
     role: "recruiter",
-    companyName: "TechCorp Global",
-    companyWebsite: "https://techcorp.com",
-    hrJobTitle: "Lead Technical Recruiter",
-    phone: "+62 812-3456-7890",
-    location: "Jakarta, Indonesia",
-    companySize: "51-200 Karyawan",
-    hrVerified: true,
-    hrVerificationStatus: "verified",
-    hrVerificationTier: "verified_domain",
-    hrVerificationMethod: "corporate_domain",
-    emailVerified: true,
-    verificationCode: null,
-    verificationExpires: null,
-    resetPasswordToken: null,
-    resetPasswordExpires: null,
-    trustedDevices: ["dev_trusted_rec_1"],
-    createdAt: "2026-08-20T00:00:00.000Z"
-  },
-  {
-    id: "rec_elena_alt",
-    fullName: "Elena Rostova",
-    email: "elena@techcorp.com",
-    passwordHash: hashPassword("password123", "default_salt"),
-    salt: "default_salt",
-    role: "recruiter",
-    companyName: "TechCorp Global",
-    companyWebsite: "https://techcorp.com",
-    hrJobTitle: "Lead Technical Recruiter",
-    phone: "+62 812-3456-7890",
-    location: "Jakarta, Indonesia",
-    companySize: "51-200 Karyawan",
-    hrVerified: true,
-    hrVerificationStatus: "verified",
-    hrVerificationTier: "verified_domain",
-    hrVerificationMethod: "corporate_domain",
-    emailVerified: true,
-    verificationCode: null,
-    verificationExpires: null,
-    resetPasswordToken: null,
-    resetPasswordExpires: null,
-    trustedDevices: ["dev_trusted_rec_1"],
-    createdAt: "2026-08-20T00:00:00.000Z"
-  },
-  // 6. Real User Profile 5 (Recruiter): Reza Pratama
-  {
-    id: "rec_2",
-    fullName: "Reza Pratama",
-    email: "reza.pratama@goventures.id",
-    passwordHash: hashPassword("Password123!", "default_salt"),
-    salt: "default_salt",
-    role: "recruiter",
-    companyName: "GoVentures Tech Group",
-    companyWebsite: "https://goventures.id",
+    companyName: "PT Digital Solusi Nusantara",
+    companyWebsite: "https://digitalnusantara.id",
     hrJobTitle: "Head of Talent Acquisition",
-    phone: "+62 811-2233-4455",
-    location: "Jakarta Selatan, DKI Jakarta",
+    phone: "+62 811-2345-6789",
+    location: "Jakarta Selatan, Indonesia",
     companySize: "201-1000 Karyawan",
     hrVerified: true,
     hrVerificationStatus: "verified",
@@ -252,7 +233,59 @@ export const DEFAULT_USERS: UserDbRecord[] = [
     verificationExpires: null,
     resetPasswordToken: null,
     resetPasswordExpires: null,
+    trustedDevices: ["dev_trusted_rec_1"],
+    createdAt: "2026-08-20T00:00:00.000Z"
+  },
+  // 9. Recruiter 2: Budi Santoso (Lead Tech Talent Recruiter)
+  {
+    id: "rec_2",
+    fullName: "Budi Santoso",
+    email: "budi.santoso@fintechasia.id",
+    passwordHash: hashPassword("Password123!", "default_salt"),
+    salt: "default_salt",
+    role: "recruiter",
+    companyName: "PT Finansial Inovasi Asia",
+    companyWebsite: "https://fintechasia.id",
+    hrJobTitle: "Lead Tech Talent Recruiter",
+    phone: "+62 812-9876-5432",
+    location: "Jakarta Pusat, Indonesia",
+    companySize: "51-200 Karyawan",
+    hrVerified: true,
+    hrVerificationStatus: "verified",
+    hrVerificationTier: "verified_domain",
+    hrVerificationMethod: "corporate_domain",
+    emailVerified: true,
+    verificationCode: null,
+    verificationExpires: null,
+    resetPasswordToken: null,
+    resetPasswordExpires: null,
     trustedDevices: ["dev_trusted_rec_2"],
+    createdAt: "2026-08-20T00:00:00.000Z"
+  },
+  // 10. Recruiter 3: Dewi Anggraini (Senior Talent Acquisition Partner)
+  {
+    id: "rec_3",
+    fullName: "Dewi Anggraini",
+    email: "dewi.anggraini@logistikglobal.id",
+    passwordHash: hashPassword("Password123!", "default_salt"),
+    salt: "default_salt",
+    role: "recruiter",
+    companyName: "PT Solusi Logistik Global",
+    companyWebsite: "https://logistikglobal.id",
+    hrJobTitle: "Senior Talent Acquisition Partner",
+    phone: "+62 813-8899-7766",
+    location: "Tangerang, Banten",
+    companySize: "501-1000 Karyawan",
+    hrVerified: true,
+    hrVerificationStatus: "verified",
+    hrVerificationTier: "verified_domain",
+    hrVerificationMethod: "corporate_domain",
+    emailVerified: true,
+    verificationCode: null,
+    verificationExpires: null,
+    resetPasswordToken: null,
+    resetPasswordExpires: null,
+    trustedDevices: ["dev_trusted_rec_3"],
     createdAt: "2026-08-20T00:00:00.000Z"
   }
 ];
@@ -292,43 +325,37 @@ export function readDb(): AuthDatabase {
       db.users = DEFAULT_USERS;
       modified = true;
     } else {
-      // Ensure all required default accounts and 5 real user profiles exist
+      // Ensure all 10 standard Indonesian accounts (1 Super Admin, 6 Candidates, 3 Recruiters) exist and are up to date
       for (const defUser of DEFAULT_USERS) {
-        const existingIdx = db.users.findIndex(u => u.email.toLowerCase() === defUser.email.toLowerCase());
+        const existingIdx = db.users.findIndex(u => u.email.toLowerCase() === defUser.email.toLowerCase() || u.id === defUser.id);
         if (existingIdx === -1) {
           db.users.push(defUser);
           modified = true;
         } else {
+          // Always ensure valid password hash, fullName, role, and email verification
+          db.users[existingIdx].fullName = defUser.fullName;
+          db.users[existingIdx].email = defUser.email;
+          db.users[existingIdx].passwordHash = defUser.passwordHash;
+          db.users[existingIdx].salt = defUser.salt;
+          db.users[existingIdx].role = defUser.role;
+          db.users[existingIdx].emailVerified = true;
           if (!db.users[existingIdx].trustedDevices) {
             db.users[existingIdx].trustedDevices = defUser.trustedDevices || [];
-            modified = true;
           }
+          modified = true;
         }
       }
     }
-    if (!db.candidates) {
-      db.candidates = MOCK_CANDIDATES;
-      modified = true;
-    }
-    if (!db.recruiters) {
-      db.recruiters = MOCK_RECRUITERS;
-      modified = true;
-    }
-    if (!db.invitations) {
-      db.invitations = MOCK_INVITATIONS;
-      modified = true;
-    }
-    if (!db.messages) {
-      db.messages = MOCK_MESSAGES;
-      modified = true;
-    }
-    if (!db.notifications) {
-      db.notifications = [
-        { id: "notif_1", title: "Elena viewed your portfolio", body: "Elena Rostova from TechCorp Global recently reviewed your payment-hub case study.", time: "1 hr ago", unread: true },
-        { id: "notif_2", title: "New Interview Pitch Received!", body: "GoVentures Tech sent you a direct Sourcing Invitation for a Frontend Internship.", time: "1 day ago", unread: true }
-      ];
-      modified = true;
-    }
+    // Always sync with the clean, realistic Indonesian mock dataset
+    db.candidates = MOCK_CANDIDATES;
+    db.recruiters = MOCK_RECRUITERS;
+    db.invitations = MOCK_INVITATIONS;
+    db.messages = MOCK_MESSAGES;
+    db.notifications = [
+      { id: "notif_1", title: "Siti Nurhaliza meninjau profil Anda", body: "Siti Nurhaliza dari PT Digital Solusi Nusantara baru saja meninjau portofolio React 19 Anda.", time: "1 jam lalu", unread: true },
+      { id: "notif_2", title: "Undangan Wawancara Baru Diterima!", body: "PT Finansial Inovasi Asia mengirimkan Undangan Wawancara Langsung untuk posisi Lead Designer.", time: "1 hari lalu", unread: true }
+    ];
+    modified = true;
     if (!db.jobOpenings || db.jobOpenings.length === 0) {
       db.jobOpenings = MOCK_JOB_OPENINGS;
       modified = true;

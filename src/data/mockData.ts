@@ -19,18 +19,18 @@ import {
 export const MOCK_CANDIDATES: Candidate[] = [
   {
     id: "cand_1",
-    fullName: "Alex Rivera",
-    email: "alex.rivera@example.com",
-    phone: "+62 811-9876-5432",
+    fullName: "Rizky Pratama",
+    email: "rizky.pratama@example.com",
+    phone: "+62 812-8765-4321",
     headline: "Senior Full Stack Engineer | React & Node.js Specialist",
-    aboutMe: "Passionate Full Stack Engineer with 6+ years of experience designing scalable web architectures and leading high-performing technical squads. Highly specialized in React, TypeScript, Next.js, GraphQL, and cloud deployments. Strong advocate for Clean Code, SOLID principles, and serverless architectures.",
-    location: "Jakarta, Indonesia",
+    aboutMe: "Senior Full Stack Engineer dengan pengalaman 6+ tahun dalam merancang arsitektur aplikasi web berkinerja tinggi. Berpengalaman memimpin tim engineering, mengimplementasikan TypeScript, React 19, arsitektur Microservices Node.js, dan optimasi database PostgreSQL skala jutaan pengguna aktif.",
+    location: "Jakarta Selatan, Indonesia",
     nationality: "Indonesian",
     avatar: DEFAULT_PROFILE_IMAGE,
     coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200&h=400",
-    website: "https://alexrivera.dev",
-    github: "https://github.com/alexrivera",
-    linkedin: "https://linkedin.com/in/alexriveradevs",
+    website: "https://rizkypratama.dev",
+    github: "https://github.com/rizkypratama",
+    linkedin: "https://linkedin.com/in/rizkypratama-dev",
     expectedSalary: "Rp 24.000.000 / bulan",
     availability: "Immediate",
     employmentType: ["Full-time", "Contract"],
@@ -55,7 +55,7 @@ export const MOCK_CANDIDATES: Candidate[] = [
     experience: [
       {
         id: "exp_1",
-        company: "Vercel Partner ID",
+        company: "PT GoTo Gojek Tokopedia Tbk",
         position: "Senior Software Engineer",
         employmentType: "Full-time",
         startDate: "2024-02",
@@ -214,9 +214,9 @@ export const MOCK_CANDIDATES: Candidate[] = [
       {
         id: "sch_app_1",
         candidateId: "cand_1",
-        candidateName: "Alex Rivera",
-        candidateEmail: "alex.rivera@example.com",
-        candidatePhone: "+62 811-9876-5432",
+        candidateName: "Rizky Pratama",
+        candidateEmail: "rizky.pratama@example.com",
+        candidatePhone: "+62 812-8765-4321",
         candidateAvatar: DEFAULT_PROFILE_IMAGE,
         trainingId: "tr_1",
         trainingTitle: "Digital Talent Scholarship (DTS) - Full Stack Engineering",
@@ -224,8 +224,8 @@ export const MOCK_CANDIDATES: Candidate[] = [
         format: "Online",
         motivationEssay: "Saya sangat berkomitmen memperdalam arsitektur TypeScript tingkat lanjut dan arsitektur database modern untuk membangun solusi teknologi inklusif di Indonesia. Beasiswa ini akan mempercepat kesiapan tim engineering kami dalam memenuhi standar industri global.",
         careerGoals: "Menjadi Principal Cloud & Full-Stack Architect yang memimpin modernisasi sistem digital publik dan membimbing generasi junior developer.",
-        portfolioUrl: "https://github.com/alexrivera",
-        linkedinUrl: "https://linkedin.com/in/alex-rivera-dev",
+        portfolioUrl: "https://github.com/rizkypratama",
+        linkedinUrl: "https://linkedin.com/in/rizkypratama-dev",
         gpaOrAchievement: "IPK 3.89 / Cumlaude - Teknik Informatika",
         weeklyCommitmentHours: 15,
         submittedAt: "2026-08-28",
@@ -238,198 +238,19 @@ export const MOCK_CANDIDATES: Candidate[] = [
   },
   {
     id: "cand_2",
-    fullName: "Sarah Chen",
-    email: "sarah.chen@example.com",
-    phone: "+62 812-3456-7890",
-    headline: "Junior Frontend Developer | Active UI Enthusiast | Fresh Graduate",
-    aboutMe: "Determined Fresh Graduate from Binus University major in Information Systems, complemented by an intensive Coding Bootcamp certification. Skilled in React, Next.js, and CSS layout engines. Energetic, eager to learn, and searching for remote or hybrid internship/entry-level roles to solve design-to-production bottlenecks.",
-    location: "Jakarta, Indonesia",
-    nationality: "Indonesian",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200",
-    coverImage: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=1200&h=400",
-    website: "https://sarahchen.me",
-    github: "https://github.com/sarahchen-dev",
-    linkedin: "https://linkedin.com/in/sarahchenindonesia",
-    expectedSalary: "Rp 8.500.000 / bulan",
-    availability: "Immediate",
-    employmentType: ["Full-time", "Internship"],
-    preferredLocation: "Jakarta / Remote",
-    openToWork: true,
-    remote: true,
-    hybrid: true,
-    onsite: true,
-    relocation: false,
-    profileCompletion: 92,
-    verified: true,
-    atsScore: 89,
-    skills: [
-      { id: "sk_11", name: "JavaScript", level: SkillLevel.Intermediate, yearsOfExperience: 2, category: SkillCategory.Programming, endorsements: 8 },
-      { id: "sk_12", name: "React", level: SkillLevel.Intermediate, yearsOfExperience: 1.5, category: SkillCategory.Programming, endorsements: 12 },
-      { id: "sk_13", name: "Tailwind CSS", level: SkillLevel.Expert, yearsOfExperience: 2, category: SkillCategory.Programming, endorsements: 15 },
-      { id: "sk_14", name: "Figma UI", level: SkillLevel.Intermediate, yearsOfExperience: 1, category: SkillCategory.Design, endorsements: 6 },
-      { id: "sk_15", name: "English (TOEFL 610)", level: SkillLevel.Expert, yearsOfExperience: 10, category: SkillCategory.Language, endorsements: 9 },
-    ],
-    experience: [
-      {
-        id: "exp_11",
-        company: "Bukalapak",
-        position: "Frontend Engineering Intern",
-        employmentType: "Internship",
-        startDate: "2025-06",
-        endDate: "2025-12",
-        current: false,
-        responsibilities: [
-          "Developed and debugged customer-facing checkout components for the lifestyle commerce department using Vue and React.",
-          "Collaborated closely with visual designers to transform Figma layout specifications into semantic HTML elements."
-        ],
-        achievements: [
-          "Redesigned the campaign modal carousel, boosting direct checkouts by 4.2% over a 30-day banner run.",
-          "Identified and cataloged 45 visual layout discrepancies using cross-browser verification toolkits."
-        ],
-        technologiesUsed: ["React", "JavaScript", "Tailwind CSS", "Figma", "Git"]
-      }
-    ],
-    education: [
-      {
-        id: "edu_11",
-        school: "Binus University",
-        degree: "Bachelor of Science (S.Kom)",
-        major: "Information Systems",
-        gpa: "3.92",
-        graduationYear: 2026,
-        activities: "Lead UI Developer for Binus Tech Club, Hackathon Runner Up"
-      }
-    ],
-    certificates: [
-      {
-        id: "cert_11",
-        name: "Full Stack Web Immersive Certificate",
-        issuer: "Hacktiv8",
-        issueDate: "2025-02",
-        expirationDate: "Never",
-        credentialId: "H8-FSD-34421-2025",
-        credentialUrl: "https://verify.hacktiv8.com",
-        pdfName: "hacktiv8_diploma.pdf",
-        verified: true
-      }
-    ],
-    portfolio: [
-      {
-        id: "proj_11",
-        title: "CleanBento - Food Delivery UI",
-        thumbnail: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600",
-        description: "A client food delivery application styled with Tailwind CSS, supporting fully responsive filtering, shopping basket simulations, and custom micro-interactions.",
-        role: "UI Engineer",
-        technology: ["React", "Tailwind CSS", "Motion"],
-        websiteUrl: "https://clean-bento.netlify.app",
-        githubUrl: "https://github.com/sarahchen-dev/cleanbento"
-      }
-    ],
-    membershipPlan: "Pro",
-    aiAtsQuotaUsed: 0,
-    aiAtsQuotaLimit: 999
-  },
-  {
-    id: "cand_3",
-    fullName: "Marcus Vance",
-    email: "marcus.vance@example.com",
-    phone: "+62 821-4455-6677",
-    headline: "Product Marketing Lead | Growth Strategist | Fintech Specialist",
-    aboutMe: "An analytical marketer bridging the gap between rigorous financial metrics and modern tech user acquisitions. 5+ years driving fintech budgets transformed into organic data-driven storytelling.",
-    location: "Bali, Indonesia",
-    nationality: "Indonesian",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200",
-    coverImage: "https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1200&h=400",
-    website: "https://vancestrategy.id",
-    github: "",
-    linkedin: "https://linkedin.com/in/marcusvancemarketing",
-    expectedSalary: "Rp 18.000.000 / bulan",
-    availability: "1 Month Notice",
-    employmentType: ["Full-time", "Freelance"],
-    preferredLocation: "Bali / Remote",
-    openToWork: true,
-    remote: true,
-    hybrid: true,
-    onsite: false,
-    relocation: false,
-    profileCompletion: 85,
-    verified: true,
-    atsScore: 84,
-    skills: [
-      { id: "sk_21", name: "Growth Marketing", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Marketing, endorsements: 18 },
-      { id: "sk_22", name: "Google Analytics 4", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Marketing, endorsements: 11 },
-      { id: "sk_23", name: "Financial Auditing", level: SkillLevel.Intermediate, yearsOfExperience: 3, category: SkillCategory.Finance, endorsements: 14 },
-      { id: "sk_24", name: "SQL Data Modeling", level: SkillLevel.Intermediate, yearsOfExperience: 2, category: SkillCategory.Programming, endorsements: 5 },
-    ],
-    experience: [
-      {
-        id: "exp_21",
-        company: "KoinWorks",
-        position: "Growth Marketing Strategist",
-        employmentType: "Full-time",
-        startDate: "2023-11",
-        endDate: "Present",
-        current: true,
-        responsibilities: [
-          "Oversee digital campaign setups for new fintech product offerings targeting young professionals.",
-          "Collaborated with data scientists to track customer acquisition funnel drops."
-        ],
-        achievements: [
-          "Lowered average cost-per-acquisition (CPA) by 14% while retaining higher initial deposits.",
-          "Supervised a growth budget across social and search pathways."
-        ],
-        technologiesUsed: ["Google Analytics", "SQL", "Tableau", "Segment"]
-      }
-    ],
-    education: [
-      {
-        id: "edu_21",
-        school: "Institut Teknologi Bandung (ITB)",
-        degree: "Master of Management (MM)",
-        major: "Marketing & Finance",
-        gpa: "3.75",
-        graduationYear: 2021,
-        activities: "Finance Forum Lead, Tech Innovation Speaker"
-      }
-    ],
-    certificates: [
-      {
-        id: "cert_21",
-        name: "Google Professional Data Analyst",
-        issuer: "Google Career Certificates",
-        issueDate: "2022-09",
-        expirationDate: "Never",
-        credentialId: "G-DA-9938192",
-        verified: true
-      }
-    ],
-    portfolio: [
-      {
-        id: "proj_21",
-        title: "Viral Budget Calculator Campaign",
-        thumbnail: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600",
-        description: "An interactive client campaign page featuring an offline cost-of-living projection matrix which generated 20,000+ subscriber signups in 14 days.",
-        role: "Product Owner",
-        technology: ["Marketing Analytics", "Product Strategy", "Figma Design"],
-        websiteUrl: "https://example.com/tools/budget-projection"
-      }
-    ]
-  },
-  {
-    id: "cand_4",
-    fullName: "Bunga Pratiwi",
-    email: "bunga.pratiwi@example.com",
-    phone: "+62 813-2233-4455",
-    headline: "Lead UI/UX Designer & Design System Specialist",
-    aboutMe: "Senior Product Designer with 5+ years of experience leading UX research, crafting scalable design systems in Figma, and collaborating seamlessly with frontend engineers. Passionate about WCAG accessibility and fluid motion design.",
-    location: "Bandung, Indonesia",
+    fullName: "Annisa Larasati",
+    email: "annisa.larasati@example.com",
+    phone: "+62 813-1122-3344",
+    headline: "Lead UI/UX & Product Designer | Design System Specialist",
+    aboutMe: "Lead Product Designer dengan pengalaman 5+ tahun merancang sistem desain (Design System), riset pengalaman pengguna (UX Research), dan antarmuka aplikasi finansial serta perbankan digital. Alumnus FSRD ITB yang berfokus pada standardisasi WCAG AA dan interaksi mikro yang intuitif.",
+    location: "Bandung, Jawa Barat",
     nationality: "Indonesian",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200",
     coverImage: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200&h=400",
-    website: "https://bungapratiwi.design",
-    github: "https://github.com/bungapratiwi",
-    linkedin: "https://linkedin.com/in/bungapratiwi",
-    expectedSalary: "Rp 16.500.000 / bulan",
+    website: "https://annisa-design.id",
+    github: "https://github.com/annisalarasati",
+    linkedin: "https://linkedin.com/in/annisa-larasati",
+    expectedSalary: "Rp 18.000.000 / bulan",
     availability: "Immediate",
     employmentType: ["Full-time", "Contract"],
     preferredLocation: "Bandung / Remote",
@@ -442,48 +263,48 @@ export const MOCK_CANDIDATES: Candidate[] = [
     verified: true,
     atsScore: 92,
     skills: [
-      { id: "sk_31", name: "Figma UI/UX", level: SkillLevel.Expert, yearsOfExperience: 5, category: SkillCategory.Design, endorsements: 31 },
-      { id: "sk_32", name: "Design Systems", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Design, endorsements: 25 },
-      { id: "sk_33", name: "User Research", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Design, endorsements: 19 },
-      { id: "sk_34", name: "Prototyping", level: SkillLevel.Expert, yearsOfExperience: 5, category: SkillCategory.Design, endorsements: 22 },
+      { id: "sk_21", name: "Figma UI/UX", level: SkillLevel.Expert, yearsOfExperience: 5, category: SkillCategory.Design, endorsements: 31 },
+      { id: "sk_22", name: "Design Systems", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Design, endorsements: 25 },
+      { id: "sk_23", name: "User Research", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Design, endorsements: 19 },
+      { id: "sk_24", name: "Prototyping", level: SkillLevel.Expert, yearsOfExperience: 5, category: SkillCategory.Design, endorsements: 22 },
     ],
     experience: [
       {
-        id: "exp_31",
-        company: "Traveloka",
-        position: "Senior Product Designer",
+        id: "exp_21",
+        company: "PT Solusi Finansial Indonesia",
+        position: "Lead Product Designer",
         employmentType: "Full-time",
-        startDate: "2022-03",
+        startDate: "2023-01",
         endDate: "Present",
         current: true,
         responsibilities: [
-          "Spearheaded redesign of multi-service checkout flow boosting completion rates by 18%.",
-          "Managed core Figma component token libraries adopted across 8 cross-functional product squads."
+          "Memimpin standardisasi Design Token antar platform web dan mobile.",
+          "Melakukan riset kegunaan dan validasi alur pembayaran QRIS serta reksa dana online."
         ],
         achievements: [
-          "Established accessible WCAG AA color tokens across web and mobile surfaces.",
-          "Conducted over 60 moderated usability tests."
+          "Meningkatkan tingkat konversi checkout sebesar 16% melalui perbaikan alur micro-interaction.",
+          "Membangun dokumentasi komponen Figma yang diadopsi oleh 6 squad produk."
         ],
         technologiesUsed: ["Figma", "Design Tokens", "Maze", "UserTesting"]
       }
     ],
     education: [
       {
-        id: "edu_31",
+        id: "edu_21",
         school: "Institut Teknologi Bandung (ITB)",
         degree: "Sarjana Desain (S.Ds)",
-        major: "Visual Communication Design",
+        major: "Desain Komunikasi Visual",
         gpa: "3.88",
-        graduationYear: 2020,
-        activities: "Head of Student Design Exhibition"
+        graduationYear: 2021,
+        activities: "Koordinator Pameran Desain ITB, Juara UX Hackathon Nasional"
       }
     ],
     certificates: [
       {
-        id: "cert_31",
+        id: "cert_21",
         name: "Google UX Design Professional Certificate",
-        issuer: "Google",
-        issueDate: "2021-04",
+        issuer: "Google Career Certificates",
+        issueDate: "2022-03",
         expirationDate: "Never",
         credentialId: "G-UX-882910",
         verified: true
@@ -491,13 +312,357 @@ export const MOCK_CANDIDATES: Candidate[] = [
     ],
     portfolio: [
       {
-        id: "proj_31",
+        id: "proj_21",
         title: "Fintech Mobile Banking Re-Architecture",
         thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
-        description: "Complete overhaul of mobile financial application including QRIS payments, micro-investments, and accessible biometric authorization.",
+        description: "Perombakan total antarmuka aplikasi mobile banking termasuk fitur QRIS transfer instan, pelacak pengeluaran otomatis, dan otentikasi biometrik.",
         role: "Lead Product Designer",
         technology: ["Figma", "Design Systems", "Prototyping"],
-        figmaUrl: "https://figma.com/@bungapratiwi"
+        figmaUrl: "https://figma.com/@annisalarasati"
+      }
+    ]
+  },
+  {
+    id: "cand_3",
+    fullName: "Dimas Arya Nugraha",
+    email: "dimas.arya@example.com",
+    phone: "+62 821-3344-5566",
+    headline: "Cloud & DevOps Architect | AWS & Kubernetes Specialist",
+    aboutMe: "Cloud DevOps Engineer dengan fokus pada infrastruktur cloud-native, orkestrasi Kubernetes, pipeline CI/CD otomatis, dan keamanan sistem perbankan. Terbiasa menangani high availability deployment di multi-region cloud.",
+    location: "Yogyakarta, Indonesia",
+    nationality: "Indonesian",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200",
+    coverImage: "https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1200&h=400",
+    website: "https://dimasarya.tech",
+    github: "https://github.com/dimasarya-cloud",
+    linkedin: "https://linkedin.com/in/dimas-arya-cloud",
+    expectedSalary: "Rp 22.000.000 / bulan",
+    availability: "Immediate",
+    employmentType: ["Full-time", "Contract"],
+    preferredLocation: "Yogyakarta / Remote",
+    openToWork: true,
+    remote: true,
+    hybrid: true,
+    onsite: false,
+    relocation: true,
+    profileCompletion: 90,
+    verified: true,
+    atsScore: 91,
+    skills: [
+      { id: "sk_31", name: "AWS Cloud", level: SkillLevel.Expert, yearsOfExperience: 5, category: SkillCategory.Programming, endorsements: 24 },
+      { id: "sk_32", name: "Kubernetes", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Programming, endorsements: 20 },
+      { id: "sk_33", name: "Terraform", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Programming, endorsements: 18 },
+      { id: "sk_34", name: "Docker & CI/CD", level: SkillLevel.Expert, yearsOfExperience: 5, category: SkillCategory.Programming, endorsements: 22 }
+    ],
+    experience: [
+      {
+        id: "exp_31",
+        company: "PT Cloud Akselerasi Nusantara",
+        position: "Lead DevOps Engineer",
+        employmentType: "Full-time",
+        startDate: "2023-03",
+        endDate: "Present",
+        current: true,
+        responsibilities: [
+          "Mengelola cluster Kubernetes untuk microservices dengan SLA uptime 99.95%.",
+          "Membangun automasi infrastruktur menggunakan Terraform dan Ansible."
+        ],
+        achievements: [
+          "Memangkas waktu deployment dari 45 menit menjadi 8 menit menggunakan GitHub Actions.",
+          "Mengurangi biaya operasional cloud bulanan sebesar 25% melalui optimasi autoscaling spot instances."
+        ],
+        technologiesUsed: ["AWS", "Kubernetes", "Terraform", "Prometheus", "Grafana"]
+      }
+    ],
+    education: [
+      {
+        id: "edu_31",
+        school: "Universitas Gadjah Mada (UGM)",
+        degree: "Sarjana Teknik (S.T)",
+        major: "Teknologi Informasi",
+        gpa: "3.82",
+        graduationYear: 2021,
+        activities: "Ketua Komunitas Cloud Computing Mahasiswa UGM"
+      }
+    ],
+    certificates: [
+      {
+        id: "cert_31",
+        name: "AWS Certified DevOps Engineer – Professional",
+        issuer: "Amazon Web Services",
+        issueDate: "2023-06",
+        expirationDate: "2026-06",
+        credentialId: "AWS-DOP-773910",
+        verified: true
+      }
+    ],
+    portfolio: [
+      {
+        id: "proj_31",
+        title: "Enterprise Multi-Region Kubernetes Mesh",
+        thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600",
+        description: "Arsitektur cloud hybrid terdistribusi dengan pemulihan bencana otomatis (automated disaster recovery) dan pemantauan metrik waktu nyata.",
+        role: "Lead Cloud Architect",
+        technology: ["AWS", "Kubernetes", "Terraform", "Istio"],
+        githubUrl: "https://github.com/dimasarya-cloud/k8s-mesh"
+      }
+    ]
+  },
+  {
+    id: "cand_4",
+    fullName: "Maya Putri Wulandari",
+    email: "maya.putri@example.com",
+    phone: "+62 856-7890-1234",
+    headline: "Junior Frontend Developer | React & Tailwind CSS Specialist",
+    aboutMe: "Frontend Developer lulusan Sistem Informasi Universitas Bina Nusantara dengan antusiasme tinggi pada React, Next.js, dan animasi antarmuka pengguna. Berpengalaman menyelesaikan program magang industri dan membangun aplikasi web interaktif responsif.",
+    location: "Jakarta Barat, Indonesia",
+    nationality: "Indonesian",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200",
+    coverImage: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=1200&h=400",
+    website: "https://mayaputri.me",
+    github: "https://github.com/mayaputri-dev",
+    linkedin: "https://linkedin.com/in/maya-putri-wulandari",
+    expectedSalary: "Rp 9.500.000 / bulan",
+    availability: "Immediate",
+    employmentType: ["Full-time", "Internship"],
+    preferredLocation: "Jakarta / Remote",
+    openToWork: true,
+    remote: true,
+    hybrid: true,
+    onsite: true,
+    relocation: false,
+    profileCompletion: 92,
+    verified: true,
+    atsScore: 89,
+    skills: [
+      { id: "sk_41", name: "React", level: SkillLevel.Intermediate, yearsOfExperience: 2, category: SkillCategory.Programming, endorsements: 14 },
+      { id: "sk_42", name: "JavaScript / TypeScript", level: SkillLevel.Intermediate, yearsOfExperience: 2, category: SkillCategory.Programming, endorsements: 12 },
+      { id: "sk_43", name: "Tailwind CSS", level: SkillLevel.Expert, yearsOfExperience: 2, category: SkillCategory.Programming, endorsements: 16 },
+      { id: "sk_44", name: "Figma to Code", level: SkillLevel.Intermediate, yearsOfExperience: 2, category: SkillCategory.Design, endorsements: 10 }
+    ],
+    experience: [
+      {
+        id: "exp_41",
+        company: "PT Bukalapak.com Tbk",
+        position: "Frontend Engineering Intern",
+        employmentType: "Internship",
+        startDate: "2025-06",
+        endDate: "2025-12",
+        current: false,
+        responsibilities: [
+          "Membantu pengembangan modul katalog kampanye promosi dan halaman keranjang belanja.",
+          "Menerapkan responsive design cross-browser dan menyelesaikan isu accessibility WCAG."
+        ],
+        achievements: [
+          "Mempercepat waktu pemuatan halaman kampanye sebesar 18% dengan lazy loading aset gambar.",
+          "Mengonversi lebih dari 20 mockup Figma ke komponen React modular."
+        ],
+        technologiesUsed: ["React", "JavaScript", "Tailwind CSS", "Git"]
+      }
+    ],
+    education: [
+      {
+        id: "edu_41",
+        school: "Universitas Bina Nusantara (Binus)",
+        degree: "Sarjana Komputer (S.Kom)",
+        major: "Sistem Informasi",
+        gpa: "3.91",
+        graduationYear: 2026,
+        activities: "Juara 2 Hackathon Mobile App Nasional"
+      }
+    ],
+    certificates: [
+      {
+        id: "cert_41",
+        name: "Full-Stack Web Development Bootcamp",
+        issuer: "Hacktiv8 Indonesia",
+        issueDate: "2025-04",
+        expirationDate: "Never",
+        credentialId: "H8-FSD-34421",
+        verified: true
+      }
+    ],
+    portfolio: [
+      {
+        id: "proj_41",
+        title: "CleanBento - Healthy Catering Delivery UI",
+        thumbnail: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600",
+        description: "Aplikasi pemesanan katering sehat dengan filter kalori instan, kalkulasi nutrisi, dan simulasi checkout e-wallet.",
+        role: "Frontend Engineer",
+        technology: ["React", "Tailwind CSS", "Motion"],
+        websiteUrl: "https://cleanbento.vercel.app",
+        githubUrl: "https://github.com/mayaputri-dev/cleanbento"
+      }
+    ]
+  },
+  {
+    id: "cand_5",
+    fullName: "Fajar Hidayat",
+    email: "fajar.hidayat@example.com",
+    phone: "+62 813-9876-5432",
+    headline: "Mobile Engineer | Flutter & Android Specialist",
+    aboutMe: "Mobile Application Developer dengan 4+ tahun pengalaman dalam membangun aplikasi mobile lintas platform (Flutter) dan native Android (Kotlin). Fokus pada arsitektur BLoC, offline-first caching, dan integrasi payment gateway lokal.",
+    location: "Surabaya, Jawa Timur",
+    nationality: "Indonesian",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200",
+    coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1200&h=400",
+    website: "https://fajarhidayat.dev",
+    github: "https://github.com/fajarhidayat-dev",
+    linkedin: "https://linkedin.com/in/fajar-hidayat-mobile",
+    expectedSalary: "Rp 16.000.000 / bulan",
+    availability: "Immediate",
+    employmentType: ["Full-time", "Contract"],
+    preferredLocation: "Surabaya / Remote",
+    openToWork: true,
+    remote: true,
+    hybrid: true,
+    onsite: true,
+    relocation: true,
+    profileCompletion: 94,
+    verified: true,
+    atsScore: 90,
+    skills: [
+      { id: "sk_51", name: "Flutter & Dart", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Programming, endorsements: 22 },
+      { id: "sk_52", name: "Android Kotlin", level: SkillLevel.Intermediate, yearsOfExperience: 3, category: SkillCategory.Programming, endorsements: 15 },
+      { id: "sk_53", name: "BLoC State Management", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Programming, endorsements: 18 },
+      { id: "sk_54", name: "SQLite & Hive", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Programming, endorsements: 16 }
+    ],
+    experience: [
+      {
+        id: "exp_51",
+        company: "PT Bank Mandiri (Persero) Tbk - Digital Squad",
+        position: "Senior Mobile Engineer",
+        employmentType: "Full-time",
+        startDate: "2023-05",
+        endDate: "Present",
+        current: true,
+        responsibilities: [
+          "Mengembangkan modul loyalty point dan pembayaran tagihan pada aplikasi perbankan mobile.",
+          "Menerapkan enkripsi AES-256 lokal dan proteksi screen capture untuk keamanan data nasabah."
+        ],
+        achievements: [
+          "Mencapai crash-free session rate sebesar 99.8% pada rilis aplikasi berskala 2 juta pengguna aktif.",
+          "Memangkas ukuran aplikasi (APK footprint) sebesar 30% dengan optimasi asset tree-shaking."
+        ],
+        technologiesUsed: ["Flutter", "Dart", "BLoC", "Kotlin", "REST API"]
+      }
+    ],
+    education: [
+      {
+        id: "edu_51",
+        school: "Telkom University",
+        degree: "Sarjana Komputer (S.Kom)",
+        major: "Teknik Informatika",
+        gpa: "3.78",
+        graduationYear: 2022,
+        activities: "Juara 1 Lomba Aplikasi Mobile Jawa Timur"
+      }
+    ],
+    certificates: [
+      {
+        id: "cert_51",
+        name: "Google Associate Android Developer",
+        issuer: "Google Developers",
+        issueDate: "2022-11",
+        expirationDate: "Never",
+        credentialId: "G-AAD-55421",
+        verified: true
+      }
+    ],
+    portfolio: [
+      {
+        id: "proj_51",
+        title: "KasirKu - Mobile POS & Offline Accounting",
+        thumbnail: "https://images.unsplash.com/photo-1556742049-0a67e557224d?auto=format&fit=crop&q=80&w=600",
+        description: "Aplikasi kasir digital untuk UMKM dengan fitur sinkronisasi cloud offline-first, pencetakan struk bluetooth, dan laporan laba rugi otomatis.",
+        role: "Lead Mobile Architect",
+        technology: ["Flutter", "Hive DB", "Bluetooth POS"],
+        githubUrl: "https://github.com/fajarhidayat-dev/kasirku"
+      }
+    ]
+  },
+  {
+    id: "cand_6",
+    fullName: "Bunga Pratiwi",
+    email: "bunga.pratiwi@example.com",
+    phone: "+62 821-5566-7788",
+    headline: "Product Marketing & Growth Lead | Fintech Specialist",
+    aboutMe: "Growth & Product Marketing Lead dengan pengalaman 5+ tahun dalam mengelola strategi akuisisi pengguna, funnel optimasi, dan kemitraan strategis di ekosistem fintech dompet digital. Ahli dalam analitik CAC vs LTV dan retensi pengguna.",
+    location: "Tangerang Selatan, Banten",
+    nationality: "Indonesian",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=200",
+    coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1200&h=400",
+    website: "https://bungapratiwi.id",
+    github: "",
+    linkedin: "https://linkedin.com/in/bunga-pratiwi-growth",
+    expectedSalary: "Rp 17.500.000 / bulan",
+    availability: "Immediate",
+    employmentType: ["Full-time", "Contract"],
+    preferredLocation: "Jakarta / Remote",
+    openToWork: true,
+    remote: true,
+    hybrid: true,
+    onsite: true,
+    relocation: true,
+    profileCompletion: 92,
+    verified: true,
+    atsScore: 88,
+    skills: [
+      { id: "sk_61", name: "Growth Marketing", level: SkillLevel.Expert, yearsOfExperience: 5, category: SkillCategory.Marketing, endorsements: 28 },
+      { id: "sk_62", name: "Google Analytics 4 & Mixpanel", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Marketing, endorsements: 22 },
+      { id: "sk_63", name: "User Retention & Cohort", level: SkillLevel.Expert, yearsOfExperience: 4, category: SkillCategory.Marketing, endorsements: 19 },
+      { id: "sk_64", name: "SQL for Analytics", level: SkillLevel.Intermediate, yearsOfExperience: 3, category: SkillCategory.Finance, endorsements: 14 }
+    ],
+    experience: [
+      {
+        id: "exp_61",
+        company: "PT Espay Debit Indonesia Koe (DANA Indonesia)",
+        position: "Senior Growth Marketing Strategist",
+        employmentType: "Full-time",
+        startDate: "2023-02",
+        endDate: "Present",
+        current: true,
+        responsibilities: [
+          "Merancang strategi kampanye promosi digital dan kemitraan merchant ritel nasional.",
+          "Menganalisis cohort retensi pengguna bulanan dan mengoptimasi funnel aktivasi akun."
+        ],
+        achievements: [
+          "Menurunkan Cost Per Acquisition (CPA) sebesar 17% dengan pengalihan strategi kanal ke targeted SEO dan referral.",
+          "Mendongkrak Monthly Active Users (MAU) sebesar 24% pada kampanye festival belanja akhir tahun."
+        ],
+        technologiesUsed: ["Mixpanel", "Google Analytics 4", "Tableau", "SQL"]
+      }
+    ],
+    education: [
+      {
+        id: "edu_61",
+        school: "Universitas Padjadjaran (Unpad)",
+        degree: "Sarjana Manajemen (S.M)",
+        major: "Manajemen Pemasaran",
+        gpa: "3.84",
+        graduationYear: 2021,
+        activities: "Ketua Himpunan Mahasiswa Manajemen Unpad"
+      }
+    ],
+    certificates: [
+      {
+        id: "cert_61",
+        name: "Google Professional Data Analyst",
+        issuer: "Google Career Certificates",
+        issueDate: "2022-09",
+        expirationDate: "Never",
+        credentialId: "G-DA-9938192",
+        verified: true
+      }
+    ],
+    portfolio: [
+      {
+        id: "proj_61",
+        title: "National Merchant Onboarding Campaign",
+        thumbnail: "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=600",
+        description: "Studi kasus strategi digital peluncuran program kemitraan QRIS UMKM yang berhasil mengakuisisi 45.000 merchant aktif dalam waktu 60 hari.",
+        role: "Growth Campaign Lead",
+        technology: ["Growth Hacking", "Mixpanel", "Marketing Strategy"]
       }
     ]
   }
@@ -506,19 +671,19 @@ export const MOCK_CANDIDATES: Candidate[] = [
 export const MOCK_RECRUITERS: Recruiter[] = [
   {
     id: "rec_1",
-    fullName: "Elena Rostova",
-    email: "elena.r@techcorp.io",
-    hrJobTitle: "Head of Global Talent Acquisition",
+    fullName: "Siti Nurhaliza",
+    email: "siti.nurhaliza@digitalnusantara.id",
+    hrJobTitle: "Head of Talent Acquisition",
     phone: "+62 811-2345-6789",
-    companyName: "TechCorp Global",
+    companyName: "PT Digital Solusi Nusantara",
     companyLogo: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=100&h=100",
-    companyWebsite: "https://techcorp.io",
-    companySize: "500-1000 Karyawan",
+    companyWebsite: "https://digitalnusantara.id",
+    companySize: "201-1000 Karyawan",
     companyRegistrationNumber: "098234710129",
     industry: "Enterprise Software & Cloud Platforms",
-    location: "Jakarta & Singapore",
+    location: "Jakarta Selatan, Indonesia",
     subscriptionTier: "Premium",
-    savedCandidateIds: ["cand_1", "cand_4"],
+    savedCandidateIds: ["cand_1", "cand_2"],
     hrVerified: true,
     hrVerificationStatus: "verified",
     authorizedDeclarationAccepted: true
@@ -526,18 +691,37 @@ export const MOCK_RECRUITERS: Recruiter[] = [
   {
     id: "rec_2",
     fullName: "Budi Santoso",
-    email: "budi.santoso@go-ventures.com",
-    hrJobTitle: "Lead Tech Recruiter",
+    email: "budi.santoso@fintechasia.id",
+    hrJobTitle: "Lead Tech Talent Recruiter",
     phone: "+62 812-9876-5432",
-    companyName: "GoVentures Tech",
+    companyName: "PT Finansial Inovasi Asia",
     companyLogo: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=100&h=100",
-    companyWebsite: "https://goventures.com",
-    companySize: "200-500 Karyawan",
+    companyWebsite: "https://fintechasia.id",
+    companySize: "51-200 Karyawan",
     companyRegistrationNumber: "123847592019",
-    industry: "E-Commerce & Digital Logistics",
-    location: "Jakarta, Indonesia",
+    industry: "Financial Technology & E-Payments",
+    location: "Jakarta Pusat, Indonesia",
     subscriptionTier: "Enterprise",
-    savedCandidateIds: ["cand_2"],
+    savedCandidateIds: ["cand_2", "cand_3"],
+    hrVerified: true,
+    hrVerificationStatus: "verified",
+    authorizedDeclarationAccepted: true
+  },
+  {
+    id: "rec_3",
+    fullName: "Dewi Anggraini",
+    email: "dewi.anggraini@logistikglobal.id",
+    hrJobTitle: "Senior Talent Acquisition Partner",
+    phone: "+62 813-8899-7766",
+    companyName: "PT Solusi Logistik Global",
+    companyLogo: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=100&h=100",
+    companyWebsite: "https://logistikglobal.id",
+    companySize: "501-1000 Karyawan",
+    companyRegistrationNumber: "987654321098",
+    industry: "Supply Chain & Smart Logistics",
+    location: "Tangerang, Banten",
+    subscriptionTier: "Premium",
+    savedCandidateIds: ["cand_1", "cand_5"],
     hrVerified: true,
     hrVerificationStatus: "verified",
     authorizedDeclarationAccepted: true
@@ -548,30 +732,32 @@ export const MOCK_INVITATIONS: Invitation[] = [
   {
     id: "inv_1",
     recruiterId: "rec_1",
-    recruiterName: "Elena Rostova",
-    companyName: "TechCorp Global",
+    recruiterName: "Siti Nurhaliza",
+    companyName: "PT Digital Solusi Nusantara",
     companyLogo: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=100&h=100",
     candidateId: "cand_1",
     position: "Senior Full-Stack Architect",
-    message: "Halo Alex, kami sangat terkesan dengan portofolio Next.js dan pengalaman arsitektur sistem Anda. Kami sedang membangun platform cloud generasi berikutnya dan ingin mengundang Anda untuk sesi perkenalan.",
+    message: "Halo Rizky, kami sangat terkesan dengan portofolio React 19 dan arsitektur backend Node.js Anda. Kami sedang membangun platform cloud enterprise dan ingin mengundang Anda untuk sesi perkenalan wawancara teknis.",
     salaryOffer: "Rp 26.000.000 - Rp 32.000.000 / bulan",
     interviewLink: "https://meet.google.com/abc-defg-hij",
-    scheduledDate: "2026-08-28T10:00",
+    scheduledDate: "2026-10-28T10:00",
     status: "scheduled",
-    createdAt: "2026-08-20T14:30"
+    createdAt: "2026-10-20T14:30"
   },
   {
     id: "inv_2",
     recruiterId: "rec_2",
     recruiterName: "Budi Santoso",
-    companyName: "GoVentures Tech",
+    companyName: "PT Finansial Inovasi Asia",
     companyLogo: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=100&h=100",
     candidateId: "cand_2",
-    position: "Frontend Engineering Intern (Tech Squad)",
-    message: "Halo Sarah, sertifikat Hacktiv8 dan aplikasi CleanBento karya Anda sangat menarik! Kami sedang mencari talenta React yang energik untuk bergabung dengan tim web mobile kami. Mari berdiskusi!",
-    salaryOffer: "Rp 9.000.000 / bulan",
-    status: "pending",
-    createdAt: "2026-08-22T09:15"
+    position: "Lead UI/UX Product Designer",
+    message: "Halo Annisa, sistem desain perbankan dan studi kasus CleanBento karya Anda sangat memukau! Kami sedang mencari Lead Designer untuk produk pembayaran digital kami. Mari berdiskusi via Google Meet.",
+    salaryOffer: "Rp 18.000.000 - Rp 22.000.000 / bulan",
+    interviewLink: "https://meet.google.com/xyz-uvw-rst",
+    scheduledDate: "2026-10-29T14:00",
+    status: "scheduled",
+    createdAt: "2026-10-22T09:15"
   }
 ];
 
@@ -580,15 +766,15 @@ export const MOCK_MESSAGES: Message[] = [
     id: "msg_1",
     invitationId: "inv_1",
     senderRole: "recruiter",
-    content: "Halo Alex! Terima kasih atas respon cepatnya. Saya sudah mengirimkan tautan Google Meet untuk hari Senin pukul 10:00 WIB. Apakah jadwal tersebut cocok?",
-    timestamp: "2026-08-21T15:00:00"
+    content: "Halo Rizky! Terima kasih atas respon cepatnya. Saya sudah mengirimkan tautan Google Meet untuk jadwal wawancara teknis hari Senin. Apakah jadwal tersebut sudah pas?",
+    timestamp: "2026-10-21T15:00:00"
   },
   {
     id: "msg_2",
     invitationId: "inv_1",
     senderRole: "candidate",
-    content: "Halo Elena! Ya, hari Senin pukul 10:00 WIB sangat cocok. Saya telah meninjau detail stack teknologi dan sangat antusias dengan arah platform cloud TechCorp. Sampai jumpa Senin!",
-    timestamp: "2026-08-21T16:20:00"
+    content: "Halo Bu Siti! Ya, hari Senin pukul 10:00 WIB sangat cocok. Saya telah meninjau stack teknologi PT Digital Solusi Nusantara dan sangat antusias. Sampai jumpa Senin!",
+    timestamp: "2026-10-21T16:20:00"
   }
 ];
 
