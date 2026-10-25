@@ -1,0 +1,6 @@
+{
+  "name": "TalentHub",
+  "description": "A recruiter-driven talent discovery platform where verified candidates showcase professional profiles, dynamic portfolios, and ATS-analyzed resumes for active hiring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
